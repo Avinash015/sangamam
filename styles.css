@@ -1,0 +1,255 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures the background image stays fixed while scrolling */
+    color: #333;
+    background-position: center ; /* Center the background image */
+
+}
+
+header.logo-header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Styles for the logo header */
+.logo-container img {
+    max-height: 50px;
+}
+.logo-container img[src="sangamam_logo.png"] {
+    max-width: 200px;
+    max-height: 70px; /* Adjust the maximum width as needed */
+}
+
+
+nav.nav-header {
+    background-color:rgb(223, 172, 106);
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 80px; /* Adjust this value to align with the bottom of the logo header */
+    left: 0;
+    right: 0;
+    z-index: 999;
+    text-align: center;
+}
+nav.nav-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav.nav-header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav.nav-header ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+nav.nav-header ul li a:hover {
+    color: #007bff;
+}
+/* Styles for the navigation bar */
+.nav-header {
+    background-color: #333; /* Background color */
+    padding: 10px 20px; /* Padding */
+}
+
+.nav-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-header ul li a {
+    text-decoration: none;
+    color: #fff; /* Text color */
+    font-size: 18px; /* Font size */
+    transition: color 0.3s ease;
+}
+
+.nav-header ul li a:hover {
+    color: #007bff; /* Hover color */
+}
+
+main {
+    padding-top: 140px; /* Adjusted to accommodate the logo header and nav header */
+}
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* Specific Section Styles */
+#home {
+    background-color: #a2d2ff;
+    color: #fff;
+}
+#about {
+    background-color: #bde0fe;
+    color: #fff;
+}
+
+
+
+/* Styling for the About Us section */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-container h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 30px;
+}
+
+.about-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-container p:first-child {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#events {
+    background-color: #ade8f4;
+    color: #333;
+}
+#schedule {
+    background-color: #64dfdf;
+    color: #fff;
+}
+
+
+
+
+
+/* Styles for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px; /* Decrease font size */
+}
+
+
+/* Styles for the useful links in the footer */
+footer .useful-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .useful-links li {
+    margin-right: 20px;
+    margin-bottom: 10px; /* Adjust spacing between list items */
+
+}
+
+footer .useful-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    padding: 5px 0; /* Adjust padding for anchor tags */
+    display: block; /* Make anchor tags block-level elements */
+
+
+}
+
+footer .useful-links li a:hover {
+    color: #007bff;
+}
+.useful-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.useful-links li {
+    flex: 0 0 25%; /* Adjust the width as needed */
+}
+
+.useful-links ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+footer .useful-links li ul {
+    margin-top: 5px; /* Adjust spacing between nested list and parent anchor tag */
+}
+
+footer .useful-links li ul li {
+    margin-bottom: 5px; /* Adjust spacing between nested list items */
+}
+
+footer .useful-links li ul li a {
+    padding: 3px 0; /* Adjust padding for nested anchor tags */
+}
+
+
+
+
+#home::before,
+#about::before,
+#events::before,
+#schedule::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Sangamam_Logo_Black.png'); /* Replace 'Sangamam_Logo_Black.png' with the URL of your background image */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.08; /* Adjust the opacity level as needed */
+}
+
+#about,
+#events,
+#schedule {
+    position: relative;
+}
