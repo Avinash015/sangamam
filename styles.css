@@ -114,7 +114,17 @@ h1, h2 {
 #about {
     background-color: #bde0fe;
     color: #fff;
+    min-height: 100vh; /* Minimum height set to 100% of viewport height */
+    height: auto; /* Allow the section to expand based on content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+    position: relative;
 }
+
 
 
 
@@ -172,7 +182,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    font-size: 14px; /* Decrease font size */
+    font-size: 18px; /* Decrease font size */
 }
 
 
@@ -227,6 +237,37 @@ footer .useful-links li ul li {
 footer .useful-links li ul li a {
     padding: 3px 0; /* Adjust padding for nested anchor tags */
 }
+
+footer .useful-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+footer .useful-links li {
+    flex: 1; /* Each division takes equal width */
+    margin-right: 20px;
+    margin-bottom: 10px; /* Adjust spacing between list items */
+    white-space: nowrap; /* Prevent the text from wrapping to the next line */
+}
+
+footer .useful-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    padding: 5px 0; /* Adjust padding for anchor tags */
+    display: block; /* Make anchor tags block-level elements */
+    overflow: hidden; /* Hide any overflow text */
+    text-overflow: ellipsis; /* Display an ellipsis (...) when the text overflows */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    footer  {
+        font-size: 10px; /* Reduce font size for smaller screens */
+    }
+}
+
 
 
 
