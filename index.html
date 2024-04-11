@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
+
+    <script>
+    // Select all <li> elements within the #events section
+        const lis = document.querySelectorAll("#events li");
+        
+        // Loop through each <li> element and log its content
+        lis.forEach(li => {
+            console.log(li.textContent);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const textContainer = document.getElementById('showcasingText');
+            const text = "Welcome to Sangamam 2K24";
+            let index = 0;
+        
+            function displayText() {
+                if (index < text.length) {
+                    textContainer.textContent += text[index];
+                    index++;
+        
+                    
+        
+                    // Add shadow effect
+                    textContainer.style.textShadow = '3px 3px 6px rgba(0, 0, 0, 0.5)';
+                    textContainer.style.fontSize = '3rem'; // Adjust the font size as needed
+                    textContainer.style.marginTop = '10%';
+        
+                    setTimeout(displayText, 50); // Adjust the time delay as needed
+                }
+            }
+        
+            displayText();
+        });
+    </script>
+    
+    
 </head>
 <body>
     <!-- Header with Logos and Navigation Links -->
@@ -13,7 +48,7 @@
             <img src="mvsr_logo.png" alt="M.V.S.R. College Logo">
         </div>
         <div class="logo-container">
-            <img src="sangamam_logo.png" alt="Sangamam Event Logo">
+            <img src="Sangamam_Logo_Black1.png" alt="Sangamam Event Logo">
         </div>
         <div class="logo-container">
             <img src="muse_team_logo.png" alt="Muse Team Logo">
@@ -27,12 +62,12 @@
             <li><a href="#schedule">Schedule</a></li>
         </ul>
     </nav>
-
     <!-- Main Content Sections -->
     <main>
-        <section id="home">
-            <h1>Welcome to our Website!</h1>
-            <p>This is the home section.</p>
+        
+        <section id="home" id="hero" id="page-content">
+            
+            <h3 id="showcasingText" ></h3>
         </section>
         <section id="about">
             <div class="about-container">
@@ -45,9 +80,63 @@
         </section>
         
         <section id="events">
-            <h2>Events</h2>
-            <p>This is the events section.</p>
-        </section>
+            
+            <ul>
+                <li> 
+                   
+                    
+                          <div class="card">
+              
+                            <div class="card-body">
+                                          
+                              <h3 class="card-title">Something Else</h3>
+                              <h4 class="card-subtitle"><i class="far fa-calendar"></i> March 10</h4>   
+                              <h6 class="card-subtitle"><i class="far fa-clock"></i> 1:00 p.m. - 3:00 p.m.</h6>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-warning">More Info</a>
+                            </div>
+                          </div>
+              
+                        
+                  <span>Lorem Ipsum</span>
+                </li>
+                <li> 
+                    <img src="https://source.unsplash.com/TIGDsyy0TK4/500x500" alt="sliced mango. " />
+                    
+              
+                          <div class="card">
+              
+                            <div class="card-body">
+                                          
+                              <h3 class="card-title">Something Else</h3>
+                              <h4 class="card-subtitle"><i class="far fa-calendar"></i> March 10</h4>   
+                              <h6 class="card-subtitle"><i class="far fa-clock"></i> 1:00 p.m. - 3:00 p.m.</h6>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-warning">More Info</a>
+                            </div>
+                          </div>
+              
+                        
+                  <span>Lorem Ipsum</span>
+                </li>
+                
+                <li> <img src="https://source.unsplash.com/TdDtTu2rv4s/500x500" alt="a bunch of blueberries. " /><span>Amet Consectetur</span></li>
+                <li> <img src="https://source.unsplash.com/eudGUrDdBB0/500x500" alt="a pineapple sitting on a table. " /><span>Adipiscing Elit</span></li>
+                <li> <img src="https://source.unsplash.com/eJH4f1rlG7g/500x500" alt="frozen raspberries. " /><span>Nunc Tortor</span></li>
+                <li> <img src="https://source.unsplash.com/24RUrLSW1HI/500x500" alt="a sliced strawberry. " /><span>Metus Mollis</span></li>
+                <li> <img src="https://source.unsplash.com/h5yMpgOI5nI/500x500" alt="an arrangement of assorted sliced fruits. " /><span>Congue Sagittis</span></li>
+                <li> <img src="https://source.unsplash.com/2TYrR2IB72s/500x500" alt="sliced watermelons. " /><span>Vestibulum Et</span></li>
+                <li> <img src="https://source.unsplash.com/1cWZgnBhZRs/500x500" alt="grapefruits, lemons, and pomegranates. " /><span>Donec Eget</span></li>
+                <li> <img src="https://source.unsplash.com/9aOswReDKPo/500x500" alt="half of an avocado. " /><span>Maecenas et Justo</span></li>
+                <li> <img src="https://source.unsplash.com/Nl7eLS8E2Ss/500x500" alt="half of a lime. " /><span>Malesuada Quam</span></li>
+                <li> <img src="https://source.unsplash.com/3HhXWJzG5Ko/500x500" alt="a single cherry with stem. " /><span>Ultricies Sollicitudin</span></li>
+                <li> <img src="https://source.unsplash.com/fczCr7MdE7U/500x500" alt="a bunch of bananas. " /><span>Gravida Nibh</span></li>
+                <li> <img src="https://source.unsplash.com/uI900SItAyY/500x500" alt="three pears. " /><span>Pellentesque Sapien</span></li>
+                <li> <img src="https://source.unsplash.com/0AynZdszfz0/500x500" alt="a basket full of peaches next to a plate with sliced peaches. " /><span>Suspendisse Vel</span></li>
+                <li> <img src="https://source.unsplash.com/C6JhUKs9q8M/500x500" alt="a bowl of avocados. " /><span>Mauris Consectetur</span></li>
+              </ul>
+              
+            </section>
         <section id="schedule">
             <h2>Schedule</h2>
             <p>This is the schedule section.</p>
