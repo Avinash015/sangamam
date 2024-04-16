@@ -240,7 +240,7 @@ footer .useful-links li a {
 
 @media only screen and (max-width: 768px) {
     footer  {
-        font-size: 10px; 
+        font-size: 5px; 
     }
 }
 
@@ -359,7 +359,7 @@ footer .useful-links li a {
   }
   img {
     display: block;
-    height: 20rem;
+    height: 95%;
     width: 100%;
     object-fit: cover;
     position: absolute;
