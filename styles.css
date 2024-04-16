@@ -260,7 +260,7 @@ footer .useful-links li a {
     }
 
     .useful-links {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .useful-links li {
