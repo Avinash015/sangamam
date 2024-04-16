@@ -168,7 +168,6 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    font-size: 18px; 
 }
 
 
@@ -265,8 +264,7 @@ footer .useful-links li a {
 
     .useful-links li {
         flex: 1 0 auto;
-        margin-right: 0;
-        margin-bottom: 10px;
+        
     }
 }
 
