@@ -168,6 +168,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    font-size: 18px; 
 }
 
 
@@ -237,23 +238,11 @@ footer .useful-links li a {
     text-overflow: ellipsis; 
 }
 
-
 @media only screen and (max-width: 768px) {
-  footer {
-      font-size: 5px; 
-  }
-
-  .useful-links {
-      flex-direction: row;
-  }
-
-  .useful-links li {
-      flex: 1 0 auto;
-      margin-right: 0;
-      margin-bottom: 10px;
-  }
+    footer  {
+        font-size: 5px; 
+    }
 }
-
 
 
 #home::before,
