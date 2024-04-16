@@ -253,20 +253,6 @@ footer .useful-links li a {
       margin-bottom: 10px;
   }
 }
-@media only screen and (max-width: 1080px) {
-    footer {
-        font-size: 14px; 
-    }
-
-    .useful-links {
-        flex-direction: row;
-    }
-
-    .useful-links li {
-        flex: 1 0 auto;
-        
-    }
-}
 
 
 
