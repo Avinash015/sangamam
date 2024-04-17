@@ -173,10 +173,6 @@ footer .useful-links li a:hover {
     padding-left: 20px;
     list-style-type: none;
 }
-footer .useful-links li ul {
-    margin-top: 5px; 
-}
-
 
 
 footer {
@@ -581,4 +577,9 @@ marquee {
   color: white;
   padding-bottom: 10px;
   margin-bottom: -10px;
+}
+
+#stall_list .card-body{
+  font-size: 8pt;
+  width: 100%;
 }
