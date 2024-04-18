@@ -583,3 +583,124 @@ marquee {
   font-size: 8pt;
   width: 100%;
 }
+
+
+.footer-middle .copy p {
+  font-size: 14px;
+  color: #555; /* Dark gray color */
+  text-align: center;
+  margin-top: 20px; /* Adjust top margin as needed */
+  margin-bottom: 20px; /* Adjust bottom margin as needed */
+  padding: 10px 0; /* Add some padding for space */
+  background-color: #f9f9f9; /* Light gray background color */
+}
+
+
+.social-network a.icoInstagram:hover {
+  background-color: #e4405f;
+}
+
+.social-network a.icoInstagram:hover i {
+  color: #fff;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+a.social-media-link{
+  color:white;
+  text-decoration: none;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .social-circle li a {
+    width: 20px; /* Decrease width */
+    height: 20px; /* Decrease height */
+    font-size: 12px; /* Decrease font size */
+  }
+
+  .social-circle li i {
+    line-height: 20px; /* Match the height of the smaller circle */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1080px) {
+  .social-circle li a {
+    width: 30px; /* Default width */
+    height: 30px; /* Default height */
+    font-size: 15px; /* Default font size */
+  }
+
+  .social-circle li i {
+    line-height: 30px; /* Match the height of the default circle */
+  }
+}
+
+@media (min-width: 1081px) {
+  .social-circle li a {
+    width: 40px; /* Increase width */
+    height: 40px; /* Increase height */
+    font-size: 20px; /* Increase font size */
+  }
+
+  .social-circle li i {
+    line-height: 40px; /* Match the height of the larger circle */
+  }
+}
+footer{
+  margin-bottom: 2px;
+}
