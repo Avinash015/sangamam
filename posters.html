@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color:#000;
+            
+            display:grid;
+            place-items:center;
+            gap: 8rem; /* Add gap between grid items */
+            padding: 5rem; /* Add padding to body for responsiveness */
+        }
+        .container {
+            max-width:600px;
+            max-height:350px;
+            margin-top: 10%;
+            
+            
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:20px;
+        }
+        img {
+            width: 30%;
+            height: 100%;
+            object-fit:cover;
+            transition: transform 0.5s ease-in-out; /* Only transition transform property */
+        }
+        .container img:hover {
+            transform: scale(1.8); /* Enlarge the hovered image */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="main_poster.jpeg" alt="">
+        <img src="celestia.jpeg" alt="">
+        <img src="rythm.jpeg" alt="">
+    </div>
+    <div class="container">
+        <img src="riyavat.jpeg" alt="">
+        <img src="aira_poster.jpeg" alt="">
+        <img src="battle_of_brains_poster.jpeg" alt="">
+    </div>
+    <div class="container">
+        <img src="chitram_poster.jpeg" alt="">
+        <img src="herlocked_poster.jpeg" alt="">
+        <img src="meloquest_poster.jpeg" alt="">
+    </div>
+    <div class="container">
+        <img src="mvsrians_on_stage_poster.jpeg" alt="">
+        <img src="perfect_treasure_poster.jpeg" alt="">
+        <img src="real_real_poster.jpeg" alt="">
+    </div>
+    <div class="container">
+        <img src="trivia_poster.jpeg" alt="">
+        <img src="very_artist_poster.jpeg" alt="">
+    </div>
+</body>
+</html>
