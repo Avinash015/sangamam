@@ -719,7 +719,7 @@ footer{
   max-height: 100%;
   height: auto;
   margin-bottom: 20px; /* Add margin to separate images */
-  padding: 20px;
+  padding: 10px;
 }
 
 @media (max-width: 880px) {
