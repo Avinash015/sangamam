@@ -705,21 +705,27 @@ footer{
   margin-bottom: 2px;
 }
 
-
-
 #invitation {
   background-color: #90CAF9;
   color: #333;
   padding: 50px 20px;
   text-align: center;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 #invitation img {
   max-width: 100%;
   max-height: 100%;
   height: auto;
-  
+  margin-bottom: 20px; /* Add margin to separate images */
+  padding: 20px;
+}
+
+@media (max-width: 880px) {
+  #invitation img {
+    display: block;
+    margin: 0 auto 20px; /* Center align and add margin */
+    max-height: 50%;
+  }
 }
