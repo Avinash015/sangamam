@@ -725,7 +725,7 @@ footer{
 @media (max-width: 880px) {
   #invitation img {
     display: block;
-    margin: 0 auto 20px; /* Center align and add margin */
+    margin: 0 auto 8px; /* Center align and add margin */
     max-height: 50%;
   }
 }
